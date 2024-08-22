@@ -41,6 +41,7 @@ public class SoundClip {
 			// TODO Auto-generated catch block
 			SoundClip snd = new SoundClip("/sounds/snd_error.wav");
 			JOptionPane.showMessageDialog(null,path + " Caused an error Advanced Details: \n" + e);
+			snd.play();
 			FileSaver sav = new FileSaver();
 			sav.Writefile("SoundClip Error", "Exception: " + e);
 			e.printStackTrace();
