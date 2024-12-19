@@ -17,9 +17,9 @@ private Thread thread;
   public SoundClip StartChime = new SoundClip("/sounds/snd_launch.wav");
   public boolean running = false;
   
-  public final double FRAMERATE = 64;
+  public double FRAMERATE = 60;
   
-  public final double UPDATE_CAP = 1.0/FRAMERATE;
+  public double UPDATE_CAP = 1.0/FRAMERATE;
   
   private int fps;
   
