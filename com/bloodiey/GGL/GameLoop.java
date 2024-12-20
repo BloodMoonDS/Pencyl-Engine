@@ -64,7 +64,8 @@ private Thread thread;
     int frames = 0;
     fps = 0;
     while (this.running) {
-    	
+    FRAMERATE = FRAMERATE;
+    UPDATE_CAP = 1.0/FRAMERATE;
       render = false;
       firstTime = System.nanoTime() / 1.0E9D;
       passedTime = firstTime - lastTime;
@@ -167,6 +168,18 @@ public String getIconDir() {
 
 public void setIconDir(String iconDir) {
 	this.iconDir = iconDir;
+}
+
+
+public double getFRAMERATE() {
+	return FRAMERATE;
+}
+
+
+public void setFRAMERATE(double fRAMERATE) {
+	FRAMERATE = fRAMERATE;
+	UPDATE_CAP = 1.0/FRAMERATE;
+	
 }
   
   
