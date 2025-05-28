@@ -29,7 +29,7 @@ private Thread thread;
   
   public float scale = 2F;
   
-  public String title = "Generic Game Library";
+  public String title = "Pencyl Engine";
   
   public String iconDir= "assets/icon/icon.png"; // default Icon for program
   
