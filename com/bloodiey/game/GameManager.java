@@ -5,7 +5,7 @@ import com.bloodiey.GGL.*;
 import com.bloodiey.GGL.GameLoop;
 import com.bloodiey.GGL.SoundClip;
 import com.bloodiey.pencylEngine.Entity;
-import com.bloodiey.pencylEngine.Sprite;
+// import com.bloodiey.pencylEngine.Sprite;
 import com.bloodiey.pencylEngine.Vector2;
 import com.bloodiey.GGL.Image;
 import com.bloodiey.GGL.GenericRender;
@@ -15,12 +15,13 @@ public class GameManager extends Abstract {
 	public SoundClip mus_title;
 	public Image exampleImg;
 	public Entity example;
-	public float spd = 16f;
+	public float spd = 24f;
+
 	public GameManager() 
 	{
 		mus_title = new SoundClip("/music/mus_lib.mid");
 		exampleImg = new Image("/sprites/example.png");
-		example = new Entity("face", exampleImg, new Vector2(160-32,120-32), new Vector2(64,64));
+		example = new Entity("face", exampleImg, new Vector2(240-32,(272/2)-32), new Vector2(64,64));
 		
 	}
 	
@@ -47,7 +48,7 @@ public class GameManager extends Abstract {
 			
 			example.position.x += spd*dt;
 		}
-		System.out.println("x: "+example.position.x+ " y: "+example.position.y);
+		// System.out.println("x: "+example.position.x+ " y: "+example.position.y);
 	}
 
 	@Override
@@ -63,7 +64,14 @@ public class GameManager extends Abstract {
 		//r.drawText("FPS: " + gc.getFps(), 0, 0, 0xffffffff);
 	}
 	public static void main (String args[]) {
+		int resx = 480;
+		int rexy = 272;
+		float scale = 2f;
 		GameLoop gc = new GameLoop(new GameManager());
+		gc.setHeight(rexy);
+		gc.setWidth(resx);
+		gc.setScale(scale);
+		gc.setFRAMERATE(120);
 		gc.start();
 	}
 	

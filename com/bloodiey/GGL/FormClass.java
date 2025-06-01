@@ -1,8 +1,8 @@
 package com.bloodiey.GGL;
 import javax.imageio.ImageIO;
-import javax.naming.SizeLimitExceededException;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
+//import javax.naming.SizeLimitExceededException;
+//import javax.swing.Icon;
+//import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -14,13 +14,13 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
-import javax.swing.JFrame;
+//import javax.swing.JFrame;
 import java.awt.Image;
 import java.awt.Point;
-import java.awt.Toolkit;
+//import java.awt.Toolkit;
 
-import javax.swing.ImageIcon;
-import java.awt.image.BufferedImage;
+//import javax.swing.ImageIcon;
+//import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
