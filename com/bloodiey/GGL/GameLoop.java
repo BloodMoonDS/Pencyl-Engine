@@ -27,6 +27,8 @@ private Thread thread;
   
   public int height = 240;
   
+  public int step = 0;
+  
   public float scale = 2F;
   
   public String title = "Pencyl Engine";
@@ -66,6 +68,8 @@ private Thread thread;
     while (this.running) {
     FRAMERATE = FRAMERATE;
     UPDATE_CAP = 1.0/FRAMERATE;
+      step += 1;
+      //System.out.println(step);
       render = false;
       firstTime = System.nanoTime() / 1.0E9D;
       passedTime = firstTime - lastTime;
